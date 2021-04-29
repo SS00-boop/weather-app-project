@@ -1,0 +1,66 @@
+body {
+  background-image: linear-gradient(
+    to top,
+    #fdcbf1 0%,
+    #fdcbf1 1%,
+    #bc32ee 100%
+  );
+}
+button {
+  background: transparent;
+  border-radius: 15px;
+}
+.sun {
+  font-size: 60px;
+  color: #fc9781;
+}
+.moon {
+  font-size: 120px;
+  color: #3f77a1;
+}
+.day {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 22px;
+  color: #626262;
+}
+.sunrise {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  color: #676767;
+}
+.sunset {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  color: #676767;
+}
+.date {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  color: #676767;
+}
+.time {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  color: #676767;
+}
+.city {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #626262;
+}
+.temperature {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 30px;
+  color: #626262;
+}
+.conditions {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 30px;
+  color: #626262;
+}
+.forecast {
+  color: #626262;
+  font-size: 25px;
+  font-weight: lighter;
+}
