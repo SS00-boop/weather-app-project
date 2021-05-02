@@ -15,32 +15,32 @@ button {
   color: #fc9781;
 }
 .moon {
-  font-size: 120px;
+  font-size: 100px;
   color: #3f77a1;
 }
 .day {
   font-family: "Rajdhani", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   color: #626262;
 }
 .sunrise {
   font-family: "Rajdhani", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   color: #676767;
 }
 .sunset {
   font-family: "Rajdhani", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   color: #676767;
 }
 .date {
   font-family: "Rajdhani", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   color: #676767;
 }
 .time {
   font-family: "Rajdhani", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   color: #676767;
 }
 .city {
@@ -51,16 +51,16 @@ button {
 }
 .temperature {
   font-family: "Rajdhani", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   color: #626262;
 }
 .conditions {
   font-family: "Rajdhani", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   color: #626262;
 }
 .forecast {
   color: #626262;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: lighter;
 }
