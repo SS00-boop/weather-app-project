@@ -10,6 +10,13 @@ button {
   background: transparent;
   border-radius: 15px;
 }
+.weather-app {
+  max-width: 650px;
+  margin: 35px auto;
+  padding: 22px;
+  border: 1px solid;
+  border-radius: 10px;
+}
 .sun {
   font-size: 60px;
   color: #fc9781;
