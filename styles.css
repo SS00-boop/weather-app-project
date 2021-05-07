@@ -16,6 +16,11 @@ h1 {
   font-weight: bolder;
   color: #626262;
 }
+h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 14px;
+  color: #626262;
+}
 .weather-app {
   max-width: 650px;
   margin: 35px auto;
@@ -31,11 +36,7 @@ h1 {
   font-size: 50px;
   color: #3f77a1;
 }
-.day {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 14px;
-  color: #626262;
-}
+
 .sunrise {
   font-family: "Rajdhani", sans-serif;
   font-size: 10px;
