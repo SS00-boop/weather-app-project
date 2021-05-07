@@ -22,7 +22,7 @@ button {
   color: #fc9781;
 }
 .moon {
-  font-size: 100px;
+  font-size: 40px;
   color: #3f77a1;
 }
 .day {
@@ -52,7 +52,7 @@ button {
 }
 .city {
   font-family: "Rajdhani", sans-serif;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: bolder;
   color: #626262;
 }
