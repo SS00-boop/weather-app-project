@@ -10,6 +10,12 @@ button {
   background: transparent;
   border-radius: 15px;
 }
+h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #626262;
+}
 .weather-app {
   max-width: 650px;
   margin: 35px auto;
@@ -50,12 +56,7 @@ button {
   font-size: 10px;
   color: #676767;
 }
-.city {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 20px;
-  font-weight: bolder;
-  color: #626262;
-}
+
 .temperature {
   font-family: "Rajdhani", sans-serif;
   font-size: 12px;
