@@ -52,11 +52,14 @@ function findCityWeather(city) {
 findCityWeather("San Francisco");
 
 function showTemperature(response) {
+  console.log(response.data);
   let h1 = document.querySelector("h1");
   h1.innerHTML = response.data.name;
   let temperature = Math.round(response.data.main.temp);
   let temperatureValue = document.querySelector("#temperature-value");
+  let descriptionElement = document.querySelector("#conditions");
   temperatureValue.innerHTML = `${temperature}°`;
+  descriptionElement.innerHTML = response.data.weather[0].description;
 }
 function findWeather(position) {
   let latitude = position.coords.latitude;
