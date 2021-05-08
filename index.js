@@ -58,8 +58,12 @@ function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureValue = document.querySelector("#temperature-value");
   let descriptionElement = document.querySelector("#conditions");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
   temperatureValue.innerHTML = `${temperature}°`;
   descriptionElement.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = response.data.wind.speed;
 }
 function findWeather(position) {
   let latitude = position.coords.latitude;
