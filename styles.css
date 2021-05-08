@@ -31,9 +31,11 @@ p {
   font-size: 18px;
   color: #676767;
 }
-.weather-app {
+.weather-app-wrapper {
   max-width: 650px;
   margin: 35px auto;
+}
+.weather-app {
   padding: 22px;
   border: 1px solid;
   border-radius: 10px;
