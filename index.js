@@ -64,7 +64,6 @@ function findCityWeather(city) {
 findCityWeather("San Francisco");
 
 function showTemperature(response) {
-  console.log(response.data);
   let h1 = document.querySelector("h1");
   h1.innerHTML = response.data.name;
   let temperature = Math.round(response.data.main.temp);
@@ -72,10 +71,17 @@ function showTemperature(response) {
   let descriptionElement = document.querySelector("#conditions");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
+  let iconElement = document.querySelector("#icon");
+
   temperatureValue.innerHTML = `${temperature}°`;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 function findWeather(position) {
   let latitude = position.coords.latitude;
