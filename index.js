@@ -14,12 +14,24 @@ let months = [
   "November",
   "December",
 ];
+
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+
 let month = months[now.getMonth()];
 let date = now.getDate();
 let year = now.getFullYear();
+let day = days[now.getDay()];
 
 let h2 = document.querySelector("h2");
-h2.innerHTML = `${month} ${date}, ${year}`;
+h2.innerHTML = `${day}, ${month} ${date}, ${year}`;
 
 let hour = now.getHours();
 let minutes = now.getMinutes();
@@ -63,7 +75,7 @@ function showTemperature(response) {
   temperatureValue.innerHTML = `${temperature}°`;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
-  windElement.innerHTML = response.data.wind.speed;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 function findWeather(position) {
   let latitude = position.coords.latitude;
