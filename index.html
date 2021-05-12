@@ -14,10 +14,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/4376c5c155.js"
-      crossorigin="anonymous"
-    ></script>
+
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Plus Week 7 Weather App</title>
@@ -27,18 +24,18 @@
       <div class="weather-app-wrapper">
       <div class="weather-app">
       <div class="row">
-        <div class="col-6">
-            <nav class="navbar navbar-light">
-     </nav>
-     <form class="d-flex" id="search-for-city" mt-3>
-        <input
-        class="form-control me-2"
-        type="search"
-        placeholder="Please enter a city"
-        id="search-city-input"
-      />
-         <input type="submit" value="search" />
-          </form>
+        <div class="col-9">
+    <form id="search-form" class="mb-3">
+      <input type="search" 
+             placeholder="Enter a city..." 
+             class="form-control" 
+             id="search-city-input" 
+             autocomplete="off" />
+      </div>
+      <div class="col-3">
+      <input type="submit" value="search" class="btn btn-primary w-100"/>
+      </div>
+    </form>
           <div class="col-6">
           <button type="button" id="current-location-button">Current Location</button>
         </div></div>

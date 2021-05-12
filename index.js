@@ -53,7 +53,7 @@ function searchCity(event) {
     alert("Please enter a city");
   }
 }
-let form = document.querySelector("#search-for-city");
+let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
 
 function findCityWeather(city) {
