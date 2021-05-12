@@ -73,6 +73,8 @@ function showTemperature(response) {
   let windElement = document.querySelector("#wind");
   let iconElement = document.querySelector("#icon");
 
+  celTemperature = Math.round(response.data.main.temp);
+
   temperatureValue.innerHTML = `${temperature}°`;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
@@ -99,15 +101,19 @@ currentLocationButton.addEventListener("click", getCurrentPosition);
 
 function convertFahrenheit(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 63;
+  let temperature = Math.round(response.data.main.temp);
+  let fahrTemperature = (celTemperature * 9) / 5 + 32;
+  let temperatureValue = document.querySelector("#temperature-value");
+  temperatureValue.innerHTML = Math.round(fahrTemperature);
 }
 
 function convertCelsius(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 17;
+  let temperatureValue = document.querySelector("#temperature-value");
+  temperatureValue.innerHTML = celTemperature;
 }
+let celTemperature = null;
+
 let fahrLink = document.querySelector("#fahr-link");
 fahrLink.addEventListener("click", convertFahrenheit);
 
