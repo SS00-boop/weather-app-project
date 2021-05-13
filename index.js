@@ -101,7 +101,6 @@ currentLocationButton.addEventListener("click", getCurrentPosition);
 
 function convertFahrenheit(event) {
   event.preventDefault();
-  let temperature = Math.round(response.data.main.temp);
   let fahrTemperature = (celTemperature * 9) / 5 + 32;
   let temperatureValue = document.querySelector("#temperature-value");
   temperatureValue.innerHTML = Math.round(fahrTemperature);
