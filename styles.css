@@ -1,14 +1,7 @@
-body {
-  background-image: linear-gradient(
-    to top,
-    #fdcbf1 0%,
-    #fdcbf1 1%,
-    #bc32ee 100%
-  );
-}
 button {
   background: transparent;
   border-radius: 15px;
+  font-size: 10px;
 }
 h1 {
   font-family: "Rajdhani", sans-serif;
@@ -53,6 +46,7 @@ h6 {
 .weather-app-wrapper {
   max-width: 650px;
   margin: 35px auto;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 .weather-app {
   padding: 22px;
