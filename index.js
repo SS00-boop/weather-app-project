@@ -63,6 +63,34 @@ function findCityWeather(city) {
 }
 findCityWeather("San Francisco");
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` 
+       <div class="col-2">
+         <div class="forecast-day">${day}</div>
+         <img src="http://openweathermap.org/img/wn/50d@2x.png"
+            alt=""
+            width="34"
+            />
+            <div class="forecast-temp-range">
+              <span class="forecast temp-range-max">
+                18</span> 
+                <span class="forecast-temp-range-min">
+                  12</span>
+                </div>
+       </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   let h1 = document.querySelector("h1");
   h1.innerHTML = response.data.name;
@@ -112,6 +140,8 @@ function convertCelsius(event) {
   temperatureValue.innerHTML = celTemperature;
 }
 let celTemperature = null;
+
+displayForecast();
 
 let fahrLink = document.querySelector("#fahr-link");
 fahrLink.addEventListener("click", convertFahrenheit);
