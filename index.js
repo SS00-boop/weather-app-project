@@ -64,26 +64,27 @@ function findCityWeather(city) {
 findCityWeather("San Francisco");
 
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
+
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
 
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       ` 
        <div class="col-2">
-         <div class="forecast-day">${day}</div>
-         <img src="http://openweathermap.org/img/wn/50d@2x.png"
+         <div class="forecast-day">${forecastDay.dt}</div>
+         <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}50d@2x.png"
             alt=""
             width="34"
             />
             <div class="forecast-temp-range">
               <span class="forecast temp-range-max">
-                18</span> 
+                ${foreceastDay.temp.max}</span> 
                 <span class="forecast-temp-range-min">
-                  12</span>
+                  ${forecastDay.temp.min}</span>
                 </div>
        </div>`;
   });
