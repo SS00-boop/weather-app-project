@@ -64,7 +64,7 @@ function findCityWeather(city) {
 findCityWeather("San Francisco");
 
 function formatDay(timestamp) {
-  let date = new forcastDate(timestamp * 1000);
+  let date = new Date(timestamp * 1000);
   let day = date.getDay();
   let days = ["Sun", "Mon", "Tues", "Weds", "Thurs", "Fri", "Sat"];
 }
