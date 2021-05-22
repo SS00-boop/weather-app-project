@@ -92,9 +92,9 @@ function displayForecast(response) {
             />
             <div class="forecast-temp-range">
               <span class="forecast temp-range-max">
-                ${forecastDay.temp.max}</span> 
+                ${Math.round(forecastDay.temp.max)}</span> 
                 <span class="forecast-temp-range-min">
-                  ${forecastDay.temp.min}</span>
+                  ${Math.round(forecastDay.temp.min)}</span>
                 </div>
        </div>`;
   });
