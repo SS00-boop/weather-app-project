@@ -78,10 +78,11 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
 
-  forecast.forEach(function (forecastDay) {
-    forecastHTML =
-      forecastHTML +
-      ` 
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        ` 
        <div class="col-2">
          <div class="forecast-day">${formatDay(forecastDay.dt)}</div>
          <img src="http://openweathermap.org/img/wn/${
@@ -97,6 +98,7 @@ function displayForecast(response) {
                   ${Math.round(forecastDay.temp.min)}</span>
                 </div>
        </div>`;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
