@@ -63,6 +63,11 @@ function findCityWeather(city) {
 }
 findCityWeather("San Francisco");
 
+function formatDay(timestamp) {
+  let date = new forcastDate(timestamp * 1000);
+  let day = date.getDay();
+}
+
 function displayForecast(response) {
   let forecast = response.data.daily;
 
@@ -75,8 +80,10 @@ function displayForecast(response) {
       forecastHTML +
       ` 
        <div class="col-2">
-         <div class="forecast-day">${forecastDay.dt}</div>
-         <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}50d@2x.png"
+         <div class="forecast-day">${formatDay(forecastDay.dt)}</div>
+         <img src="http://openweathermap.org/img/wn/${
+           forecastDay.weather[0].icon
+         }50d@2x.png"
             alt=""
             width="34"
             />
