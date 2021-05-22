@@ -63,7 +63,7 @@ function findCityWeather(city) {
 }
 findCityWeather("San Francisco");
 
-function displayForecast(response) {
+function displayForecast(response, data, daily) {
   console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
