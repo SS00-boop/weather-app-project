@@ -152,22 +152,4 @@ function getCurrentPosition(event) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentPosition);
 
-function convertFahrenheit(event) {
-  event.preventDefault();
-  let fahrTemperature = (celTemperature * 9) / 5 + 32;
-  let temperatureValue = document.querySelector("#temperature-value");
-  temperatureValue.innerHTML = Math.round(fahrTemperature);
-}
-
-function convertCelsius(event) {
-  event.preventDefault();
-  let temperatureValue = document.querySelector("#temperature-value");
-  temperatureValue.innerHTML = celTemperature;
-}
 let celTemperature = null;
-
-let fahrLink = document.querySelector("#fahr-link");
-fahrLink.addEventListener("click", convertFahrenheit);
-
-let celLink = document.querySelector("#cel-link");
-celLink.addEventListener("click", convertCelsius);
