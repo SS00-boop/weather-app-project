@@ -58,7 +58,7 @@ form.addEventListener("submit", searchCity);
 
 function findCityWeather(city) {
   let apiKey = "b44a9bf56bc77c3722a82aafc305edd4";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(showTemperature);
 }
 findCityWeather("San Francisco");
