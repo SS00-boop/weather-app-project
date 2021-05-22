@@ -152,7 +152,7 @@ function convertCelsius(event) {
 }
 let celTemperature = null;
 
-displayForecast();
+displayForecast(response);
 
 let fahrLink = document.querySelector("#fahr-link");
 fahrLink.addEventListener("click", convertFahrenheit);
