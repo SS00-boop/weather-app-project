@@ -126,7 +126,7 @@ function showTemperature(response) {
 
   celTemperature = Math.round(response.data.main.temp);
 
-  temperatureValue.innerHTML = `${temperature} °`;
+  temperatureValue.innerHTML = `${temperature}° `;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
